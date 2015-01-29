@@ -1,0 +1,9 @@
+{
+	"name": "cyberhouse-typo3/news-gallery",
+	"version": "0.1.0",
+	"description": "Simple gallery for news",
+	"type": "typo3-cms-extension",
+	"require": {
+		"typo3/cms-core": "6.2.*"
+	}
+}
