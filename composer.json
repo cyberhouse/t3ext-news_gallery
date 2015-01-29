@@ -1,5 +1,5 @@
 {
-	"name": "cyberhouse-typo3/news_gallery",
+	"name": "cyberhouse-typo3/news-gallery",
 	"version": "0.1.0",
 	"description": "Simple gallery for news",
 	"type": "typo3-cms-extension",
