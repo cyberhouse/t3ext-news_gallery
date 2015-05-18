@@ -17,6 +17,11 @@ $columns = array(
 			'maxitems' => 10,
 			'minitems' => 0,
 			'size' => 5,
+			'wizards' => array(
+				'suggest' => array(
+					'type' => 'suggest',
+				),
+			),
 		)
 	),
 );

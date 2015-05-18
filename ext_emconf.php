@@ -1,15 +1,5 @@
 <?php
 
-/***************************************************************
- * Extension Manager/Repository config file for ext "news".
- *
- * Auto generated 16-05-2014 11:31
- *
- * Manual updates:
- * Only the data in the array - everything else is removed by next
- * writing. "version" and "dependencies" must not be touched!
- ***************************************************************/
-
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Simple gallery for ext:news',
 	'description' => 'Extend news with file collections',
@@ -28,11 +18,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 1,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '3.0.0',
+	'version' => '3.2.0',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2.3-6.2.99',
-			'news' => '3.0.0',
+			'typo3' => '6.2.3-7.9.99',
+			'news' => '3.2.0',
 		),
 		'conflicts' => array(),
 		'suggests' => array(),

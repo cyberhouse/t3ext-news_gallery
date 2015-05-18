@@ -1,6 +1,8 @@
 <?php
 
-/**
+namespace Cyberhouse\NewsGallery\Domain\Model;
+
+/*
  * This file is part of the TYPO3 project.
  *
  * It is free software; you can redistribute it and/or modify it under
@@ -12,7 +14,9 @@
  *
  * The TYPO3 project - inspiring people to share!
  */
-class Tx_NewsGallery_Domain_Model_News extends Tx_News_Domain_Model_News {
+
+
+class News extends \GeorgRinger\News\Domain\Model\News {
 
 	/**
 	 * @var string
@@ -32,6 +36,5 @@ class Tx_NewsGallery_Domain_Model_News extends Tx_News_Domain_Model_News {
 	public function setGallery($gallery) {
 		$this->gallery = $gallery;
 	}
-}
 
-?>
+}

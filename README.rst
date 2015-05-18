@@ -5,7 +5,7 @@
 
 
 News gallery: Extend news with file collections
-=============================================================
+===============================================
 
 About
 -----
@@ -25,7 +25,7 @@ Requirements
 Screenshots
 ~~~~~~~~~~~
 
-.. figure:: Documentation/screenshot.png
+.. figure:: Resources/Public/Documentation/screenshot.png
 		:alt: Screenshot of the backend
 
 
@@ -70,7 +70,7 @@ This is just an example snippet which outputs all images of the file collection 
 
 
 Misc
--------------------
+----
 
 Author
 ~~~~~~

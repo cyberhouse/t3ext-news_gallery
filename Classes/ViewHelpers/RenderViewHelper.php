@@ -2,7 +2,7 @@
 
 namespace Cyberhouse\NewsGallery\ViewHelpers;
 
-/**
+/*
  * This file is part of the TYPO3 project.
  *
  * It is free software; you can redistribute it and/or modify it under
@@ -15,6 +15,8 @@ namespace Cyberhouse\NewsGallery\ViewHelpers;
  * The TYPO3 project - inspiring people to share!
  */
 
+use TYPO3\CMS\Core\Resource\Collection\AbstractFileCollection;
+use TYPO3\CMS\Core\Resource\Exception;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -43,11 +45,11 @@ class RenderViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelp
 		foreach ($collectionUids as $collectionUid) {
 			try {
 				$fileCollection = $this->collectionRepository->findByUid($collectionUid);
-				if ($fileCollection instanceof \TYPO3\CMS\Core\Resource\Collection\AbstractFileCollection) {
+				if ($fileCollection instanceof AbstractFileCollection) {
 					$fileCollection->loadContents();
 					$this->addToArray($fileCollection->getItems(), $fileObjects);
 				}
-			} catch (\TYPO3\CMS\Core\Resource\Exception $e) {
+			} catch (Exception $e) {
 				throw new \TYPO3\CMS\Fluid\View\Exception(sprintf('The collection with uid "%s" could not be found', $collectionUid));
 			}
 		}
