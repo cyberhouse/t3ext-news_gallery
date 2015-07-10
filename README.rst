@@ -20,7 +20,7 @@ Requirements
 ~~~~~~~~~~~~
 
 - TYPO3 6.2
-- Extension "news" 3.0.0
+- Extension "news" 3.2.0
 
 Screenshots
 ~~~~~~~~~~~
